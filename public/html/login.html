@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/public.min.css">
+		<link rel="stylesheet" href="../css/login.min.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="logo"></div>
+				<h2>欢迎登录</h2>
+			</div>
+		</div>
+		<div class="container-fluid background">
+			<div class="container">
+				<section>
+					<div class="row">
+						<div class="col-xs-7">
+							<img src="../img/login/CgAgEVctrCiAC1slAAHd-utbGgk880.jpg" alt="">
+						</div>
+						<div class="col-xs-5">
+							<div class="form">
+								<h3>欢迎登录</h3>
+								<!-- 登录表单 **********************************************-->
+
+								<form class="form-horizontal">
+
+									<div class="form-group has-success has-feedback">
+										<div class="col-sm-12">
+											<div class="input-group">
+												<span class="input-group-addon glyphicon glyphicon-user"></span>
+												<input type="text" class="form-control" id="users" aria-describedby="inputGroupSuccess2Status"
+												 placeholder="请输入用户名/手机号码/邮箱">
+											</div>
+										</div>
+									</div>
+
+
+									<div class="form-group has-success has-feedback">
+										<div class="col-sm-12">
+											<div class="input-group">
+												<span class="input-group-addon glyphicon glyphicon-lock"></span>
+												<input type="password" class="form-control password" id="password" aria-describedby="inputGroupSuccess2Status"
+												 placeholder="请输入您的密码">
+												<span class="input-group-addon glyphicon glyphicon-eye-close NotSee"></span>
+											</div>
+										</div>
+									</div>
+
+									<!-- 三天免登录 -->
+									<input type="checkbox" id="ck">
+									<h5>3天免登录</h5>
+									<!-- 登录按钮 -->
+									<button type="button" class="btn btn-primary btn-lg btn-block" id="btn" style="background: #409ffb;">登录</button>
+
+									<div class="row a_sign">
+										<div class="col-xs-3 L_freeRegister" style="cursor: pointer;"><a>免费注册></a></div>
+										<div class="col-xs-3 col-xs-offset-6"><a href="">忘记密码？</a></div>
+									</div>
+
+								</form>
+
+
+								<div class="cooperation">
+									<div class="row">
+										<div class="left col-xs-3"></div>
+										<span class="center col-xs-6">使用合作网站账号登录康爱多</span>
+										<div class="right col-xs-3"></div>
+									</div>
+
+									<div class="character row">
+										<li class="li1 col-xs-2"><a href=""></a></li>
+										<li class="li2 col-xs-2"><a href=""></a></li>
+										<li class="li3 col-xs-2"><a href=""></a></li>
+										<li class="li4 col-xs-2"><a href=""></a></li>
+										<li class="li5 col-xs-2"><a href=""></a></li>
+										<li class="li6 col-xs-2"><a href=""></a></li>
+									</div>
+
+								</div>
+								<!-- ***************************************************** -->
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="foot"></div>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/login.min.js"></script>
+		<script type="text/javascript" src="../js/cookie.min.js"></script>
+		<script type="text/javascript">
+			$('.logo').load('public.html section .logo');
+			$('.foot').load('public.html .footer-three', function() {
+				var sc = document.createElement('script');
+				sc.src = '../js/public.min.js';
+				$('body').append(sc);
+			});
+		</script>
+	</body>
+</html>

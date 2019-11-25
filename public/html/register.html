@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/public.min.css">
+		<link rel="stylesheet" href="../css/login.min.css">
+		<link rel="stylesheet" href="../css/register.min.css">
+	</head>
+	<body>
+		<div class="container-fluid border_bottom">
+			<div class="container">
+				<div class="logo"></div>
+				<h2>欢迎注册</h2>
+				<p class="toLogin">已有账号,<a style="cursor: pointer;">立即登陆></a></p>
+			</div>
+		</div>
+		<h3 class="h3">欢迎注册康爱多网站</h3>
+	
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<form class="form-horizontal">
+						
+							<div class="form-group has-success has-feedback">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-user"></span>
+										<input type="text" class="form-control R-user" aria-describedby="inputGroupSuccess2Status"
+										 placeholder="用户名/手机号码/邮箱">
+									</div>
+								</div>
+							</div>
+						
+						
+							<div class="form-group has-success has-feedback">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"></span>
+										<input type="password" class="form-control R-imports password1" aria-describedby="inputGroupSuccess2Status"
+										 placeholder="请输入您的密码">
+										 <!-- 输入密码 -->
+										<span class="input-group-addon glyphicon glyphicon-eye-close NotSee1 "></span>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="form-group has-success has-feedback">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"></span>
+										<input type="password" class="form-control R-affirm password2" aria-describedby="inputGroupSuccess2Status"
+										 placeholder="密码确认">
+										 <!-- 确认密码 -->
+										 <span class="input-group-addon glyphicon glyphicon-eye-close NotSee2"></span>
+									</div>
+								</div>
+							</div>
+							<input type="checkbox" id="ck" checked="checked">
+							<h6 class="h6">我已阅读并同意<a href="">《康爱多网上药店服务协议》</a>及<a href="">《隐私声明》</a></h6>
+							<!-- 注册按钮 -->
+							<button type="button" class="btn btn-primary btn-lg btn-block" style="background: #409ffb;">立即注册</button>
+							<div class="cooperation"></div>
+				  </div>
+					<div class="col-xs-3 Prompt">
+						<div class="row">
+							<div class="col-xs-12 Prompt_one"></div>
+							<div class="col-xs-12 Prompt_two"></div>
+							<div class="col-xs-12 Prompt_three"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="foot"></div>
+		
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>	
+		<script type="text/javascript" src="../js/register.min.js"></script>
+		<script type="text/javascript" src="../js/cookie.min.js"></script>
+		<script type="text/javascript">
+			$('.logo').load('public.html section .logo');
+			$('.foot').load('public.html .footer-three');
+			$('.cooperation').load('login.html .cooperation',function(){
+				let sc1 = document.createElement('script');
+				sc1.src = '../js/login.min.js';
+				$('body').append(sc1);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/public.min.css">
+	</head>
+	<body>
+		<div class="top"></div>
+		<div class="public"></div>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<table class="table table-hover">
+					  <caption><h2>商品结算</h2></caption>
+					  <thead>
+					    <tr>
+					      <th>#</th>
+					      <th>商品名称</th>
+					      <th>会员价</th>
+						  <th>数量</th>
+						  <th>优惠金额</th>
+						  <th>合计</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+							<th>1</th>
+							<th>盐酸达泊西汀片</th>
+							<th>389.00</th>
+							<th></th>
+							<th>0</th>
+							<th></th>
+					    </tr>
+					    <tr>
+					     <th>2</th>
+					    </tr>
+					    <tr>
+					      <th>3</th>
+					    </tr>
+					  </tbody>
+					</table>
+					<!-- 事件冒泡 委托
+					es6 正则（知道方法）
+					解决异步的两种方案 promise
+					本地存储
+					
+					ajax(封装) 跨域jsonp
+					面向对象
+					闭包 继承 单例 观察者（模式） -->
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="foot"></div>
+		<div class="bottom"></div>
+		<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$('.top').load('public.html .topImg');
+			$('.public').load('public.html header,section,nav,aside', function() {
+				var sc = document.createElement('script');
+				sc.src = '../js/public.min.js';
+				$('body').append(sc);
+			});
+			$('.foot').load('public.html footer');
+			$('.bottom').load('public.html .footer-three');
+		</script>
+	</body>
+</html>
